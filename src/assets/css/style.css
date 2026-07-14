@@ -770,3 +770,270 @@ margin-bottom:15px;
     height: 400px;
     object-fit: cover;
 }
+
+.collection-header{
+position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    border-radius: 50px;
+    background: linear-gradient(135deg, #FFE6F0, #FFF5E8, #EAF7FF);
+    /* margin: 30px 0; */
+    margin-bottom: 30px;
+}
+
+.collection-header h2{
+    font-size: 20px;
+    font-weight: 700;
+    color: #1b2b50;
+    position: relative;
+    z-index: 2;
+    margin: 0px;
+}
+
+.view-btn{
+position: relative;
+    z-index: 2;
+    background: #fff;
+    border: 2px solid #1b2b50;
+    padding: 10px 20px;
+    border-radius: 40px;
+    font-weight: 600;
+    font-size: 15px;
+    transition: .3s;
+}
+
+.view-btn:hover{
+    background:#ff6b81;
+    color:#fff;
+    border-color:#ff6b81;
+}
+
+/* Floating Circles */
+
+.floating-circle{
+    position:absolute;
+    border-radius:50%;
+    opacity:.25;
+    animation:float 8s infinite ease-in-out;
+}
+
+.circle1{
+    width:120px;
+    height:120px;
+    background:#FFD166;
+    left:-30px;
+    top:-20px;
+}
+
+.circle2{
+    width:70px;
+    height:70px;
+    background:#7BDFF2;
+    right:250px;
+    bottom:-20px;
+    animation-delay:2s;
+}
+
+.circle3{
+    width:90px;
+    height:90px;
+    background:#FF8FAB;
+    right:60px;
+    top:-15px;
+    animation-delay:4s;
+}
+
+/* Floating Emoji */
+
+.floating-star{
+    position:absolute;
+    font-size:26px;
+    animation:float2 6s infinite;
+    opacity:.8;
+}
+
+.star1{
+    left:28%;
+    top:15%;
+}
+
+.star2{
+    left:65%;
+    bottom:18%;
+    animation-delay:2s;
+}
+
+.star3{
+    right:18%;
+    top:20%;
+    animation-delay:4s;
+}
+
+/* Animations */
+
+@keyframes float{
+
+    0%{
+        transform:translateY(0) scale(1);
+    }
+
+    50%{
+        transform:translateY(-20px) scale(1.1);
+    }
+
+    100%{
+        transform:translateY(0);
+    }
+
+}
+
+@keyframes float2{
+
+    0%{
+        transform:translateY(0) rotate(0deg);
+    }
+
+    50%{
+        transform:translateY(-12px) rotate(10deg);
+    }
+
+    100%{
+        transform:translateY(0) rotate(0deg);
+    }
+
+}
+
+
+.offer-topbar{
+    position:relative;
+    overflow:hidden;
+    background:#ff6b81;
+}
+
+.offer-topbar::before,
+.offer-topbar::after{
+    content:"";
+    position:absolute;
+    width:250px;
+    height:250px;
+    border-radius:50%;
+    filter:blur(80px);
+    opacity:.35;
+
+}
+
+.offer-topbar::before{
+    background:#FFD166;
+    left:-80px;
+    animation:blob1 10s infinite alternate;
+
+}
+
+.offer-topbar::after{
+    background:#6EC6FF;
+    right:-80px;
+    animation:blob2 8s infinite alternate;
+
+}
+
+@keyframes blob1{
+0%{
+transform:translate(0,0) scale(1);
+}
+100%{
+transform:translate(120px,-30px) scale(1.4);
+}
+}
+
+@keyframes blob2{
+0%{
+transform:translate(0,0) scale(1);
+}
+100%{
+transform:translate(-120px,20px) scale(1.3);
+}
+
+}
+
+.offer-topbar{
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(
+        -45deg,
+        #ff6b81,
+        #ff8fab,
+        #ffb347,
+        #ff6b81
+    );
+    background-size: 400% 400%;
+    animation: gradientMove 8s ease infinite;
+    color:#fff;
+    text-align:center;
+    padding:5px 20px;
+    font-size:16px;
+    font-weight:600;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:15px;
+}
+
+/* Shine Effect */
+
+.offer-shine{
+    position:absolute;
+    top:0;
+    left:-150px;
+    width:120px;
+    height:100%;
+    background:rgba(255,255,255,.35);
+    transform:skewX(-25deg);
+    animation:shine 4s infinite;
+
+}
+
+/* Floating Icons */
+
+.offer-icon{
+    font-size:22px;
+    animation:bounce 2s infinite;
+
+}
+
+.offer-icon:last-child{
+    animation-delay:1s;
+
+}
+
+/* Gradient Animation */
+
+@keyframes gradientMove{
+0%{
+background-position:0% 50%;
+}
+50%{
+background-position:100% 50%;
+}
+100%{
+background-position:0% 50%;
+}
+
+}
+
+
+
+/* Bounce */
+
+@keyframes bounce{
+0%,100%{
+transform:translateY(0);
+}
+50%{
+transform:translateY(-6px);
+
+}
+
+}

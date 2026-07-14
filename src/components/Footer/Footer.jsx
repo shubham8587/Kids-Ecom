@@ -134,7 +134,7 @@ function Footer() {
 
             <div className="contact-item">
               <FaPhoneAlt />
-              <span>+1 987 654 3210</span>
+              <span>+1 983 654 4440</span>
             </div>
 
             <div className="contact-item">

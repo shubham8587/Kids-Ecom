@@ -49,25 +49,21 @@ const categories = [
 function ShopCategories() {
   return (
     <section className="category-section py-5">
-      <Container>
-    <div className="d-flex justify-content-between align-items-center flex-wrap mb-4 title_bg">
-  <div>
+  <Container>
+        <div className="collection-header">
+  <div className="floating-circle circle1"></div>
+  <div className="floating-circle circle2"></div>
+  <div className="floating-circle circle3"></div>
 
-    <h2 className="section-title mt-2 mb-2">
-      Explore Kids Collections
-    </h2>
-  </div>
+  <div className="floating-star star1">⭐</div>
+  <div className="floating-star star2">🌈</div>
+  <div className="floating-star star3">🎈</div>
 
-  <div className="mt-3 mt-md-0">
-    <Button
-      variant="outline-dark"
-      className="rounded-pill px-4 py-2 fw-semibold"
-    >
-      View All →
-    </Button>
-  </div>
+  <h2>Explore Kids Collections</h2>
+  <button className="view-btn">
+    View All →
+  </button>
 </div>
-
         <Row className="g-4">
           {categories.map((item) => (
             <Col lg={2} md={4} key={item.id}>

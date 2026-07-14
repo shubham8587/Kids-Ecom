@@ -36,22 +36,20 @@ function BrandsKidsSection() {
   return (
     <section className="offer-slider-section py-5">
       <Container>
-    <div className="d-flex justify-content-between align-items-center flex-wrap mb-4 title_bg">
-  <div>
 
-    <h2 className="section-title mt-2 mb-2">
-     Brands You Love
-    </h2>
-  </div>
+                        <div className="collection-header">
+  <div className="floating-circle circle1"></div>
+  <div className="floating-circle circle2"></div>
+  <div className="floating-circle circle3"></div>
 
-  <div className="mt-3 mt-md-0">
-    <Button
-      variant="outline-dark"
-      className="rounded-pill px-4 py-2 fw-semibold"
-    >
-      View All →
-    </Button>
-  </div>
+  <div className="floating-star star1">⭐</div>
+  <div className="floating-star star2">🌈</div>
+  <div className="floating-star star3">🎈</div>
+
+  <h2>   Trending Styles</h2>
+  <button className="view-btn">
+    View All →
+  </button>
 </div>
         <Carousel
           indicators={false}

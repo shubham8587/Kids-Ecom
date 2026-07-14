@@ -26,12 +26,14 @@ function Header() {
   return (
     <>
       {/* Top Bar */}
-      <div
-        className="py-2 text-center text-white"
-        style={{ background: "#ff6b81", fontSize: "14px" }}
-      >
-        🎉 Free Shipping on Orders Above ₹999
-      </div>
+<div className="offer-topbar">
+  <div className="offer-shine"></div>
+  <span className="offer-icon">🎉</span>
+  <span className="offer-text">
+    Free Shipping on Orders Above ₹999
+  </span>
+  <span className="offer-icon">🎁</span>
+</div>
 
       {/* Header */}
       <Navbar bg="white" expand="lg" className="shadow-sm py-3">

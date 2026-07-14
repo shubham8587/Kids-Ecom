@@ -1,11 +1,10 @@
 import React from "react";
-import { Container, Row, Col, Card, Button } from "react-bootstrap";
+import { Container, Row, Col, Card } from "react-bootstrap";
 import boy from "../assets/images/boy.png";
 import kids1 from "../assets/images/kids1.avif";
 import newborn from "../assets/images/newborn.png";
 import shoes from "../assets/images/shoes.png";
 import winter from "../assets/images/winter.png";
-
 
 const categories = [
   {
@@ -17,31 +16,31 @@ const categories = [
   {
     id: 2,
     title: "Girls Collection",
-  image: kids1,
+    image: kids1,
     color: "#FCE4EC",
   },
   {
     id: 3,
     title: "Newborn",
-     image: newborn,
+    image: newborn,
     color: "#FFF8E1",
   },
   {
     id: 4,
     title: "Shoes",
-  image: shoes,
+    image: shoes,
     color: "#E8F5E9",
   },
   {
     id: 5,
     title: "Accessories",
-  image: kids1,
+    image: kids1,
     color: "#F3E5F5",
   },
   {
     id: 6,
     title: "Winter Wear",
-   image: winter,
+    image: winter,
     color: "#E0F7FA",
   },
 ];
@@ -49,21 +48,19 @@ const categories = [
 function ShopCategories() {
   return (
     <section className="category-section py-5">
-  <Container>
+      <Container>
         <div className="collection-header">
-  <div className="floating-circle circle1"></div>
-  <div className="floating-circle circle2"></div>
-  <div className="floating-circle circle3"></div>
+          <div className="floating-circle circle1"></div>
+          <div className="floating-circle circle2"></div>
+          <div className="floating-circle circle3"></div>
 
-  <div className="floating-star star1">⭐</div>
-  <div className="floating-star star2">🌈</div>
-  <div className="floating-star star3">🎈</div>
+          <div className="floating-star star1">⭐</div>
+          <div className="floating-star star2">🌈</div>
+          <div className="floating-star star3">🎈</div>
 
-  <h2>Explore Kids Collections</h2>
-  <button className="view-btn">
-    View All →
-  </button>
-</div>
+          <h2>Explore Kids Collections</h2>
+          <button className="view-btn">View All →</button>
+        </div>
         <Row className="g-4">
           {categories.map((item) => (
             <Col lg={2} md={4} key={item.id}>

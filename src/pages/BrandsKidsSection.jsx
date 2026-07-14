@@ -46,11 +46,11 @@ function BrandsKidsSection() {
   <div className="floating-star star2">🌈</div>
   <div className="floating-star star3">🎈</div>
 
-  <h2>   Trending Styles</h2>
+  <h2>   Brands You Love</h2>
   <button className="view-btn">
     View All →
   </button>
-</div>
+</div> 
         <Carousel
           indicators={false}
           interval={3000}
